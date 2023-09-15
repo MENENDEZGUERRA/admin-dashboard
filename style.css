@@ -1,0 +1,22 @@
+.icon{
+    fill: #ffff;
+    width: 50px;
+}
+
+html{
+    background-color: green;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    background-color: #84cc16;
+    width: 40vh;
+    gap: 50px;
+}
