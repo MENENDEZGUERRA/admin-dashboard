@@ -1,3 +1,4 @@
+/*Sidebar*/
 .icon{
     fill: #ffff;
     width: 50px;
@@ -26,6 +27,12 @@ html{
     align-items: center;
 }
 
+/* Top Bar */
+.topvar {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* Style the search box inside the navigation bar */
 input[type=text] {
     border: none;
@@ -39,8 +46,8 @@ input[type=text] {
 .profile-img-container{
     display: inline-block; 
     position: relative; 
-    width: 200px; 
-    height: 200px; 
+    width: 10vh; 
+    height: 10vh; 
     overflow: hidden;
     border-radius: 50%;
 }
@@ -48,5 +55,5 @@ input[type=text] {
 .profile-pic {
     width: auto; 
     height: 100%; 
-    margin-left: -50px;
+    margin-left: -10px;
 }
