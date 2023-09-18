@@ -58,3 +58,21 @@ input[type=text] {
     margin-left: -10px;
 }
 
+/*Welcome Bar*/
+.welcomebar {
+    display: flex;
+}
+
+.user-container {
+    display: flex;
+}
+
+.user-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+#user-text {
+    margin: 0;
+}
