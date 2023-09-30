@@ -42,7 +42,7 @@ input[type=text] {
     padding: 10px;
     height: 10px;
     width: 50vh;
-    background-color: grey;
+    background-color: lightgrey;
     color: whitesmoke;
 }
 
@@ -66,6 +66,7 @@ input[type=text] {
     display: flex;
     background-color: whitesmoke;
     justify-content: space-around;
+    padding: 16px;
 }
 
 .user-container {
@@ -95,4 +96,9 @@ input[type=text] {
     border: none;
     text-align: center;
     padding: 20px;
+}
+
+
+.card-container{
+    background-color: white;
 }
