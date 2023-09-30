@@ -31,6 +31,7 @@ html{
 .topvar {
     display: flex;
     justify-content: space-around;
+    background-color: whitesmoke;
 }
 
 /* Style the search box inside the navigation bar */
@@ -41,6 +42,8 @@ input[type=text] {
     padding: 10px;
     height: 10px;
     width: 50vh;
+    background-color: grey;
+    color: whitesmoke;
 }
 
 .profile-img-container{
@@ -61,6 +64,8 @@ input[type=text] {
 /*Welcome Bar*/
 .welcomebar {
     display: flex;
+    background-color: whitesmoke;
+    justify-content: space-around;
 }
 
 .user-container {
@@ -75,4 +80,19 @@ input[type=text] {
 
 #user-text {
     margin: 0;
+}
+
+.welcome-buttons {
+    display: flex;
+    margin: 5px;
+    gap: 8px;
+}
+
+#btn {
+    background-color: blue;
+    border-radius: 24px;
+    color: whitesmoke;
+    border: none;
+    text-align: center;
+    padding: 20px;
 }
