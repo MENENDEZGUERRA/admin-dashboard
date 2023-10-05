@@ -1,11 +1,36 @@
-/*Sidebar*/
-.icon{
-    fill: #ffff;
-    width: 50px;
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: green;
 }
 
-html{
-    background-color: green;
+@font-face {
+    font-family: 'QuasarSoft';
+    src: url('./fonts/QuasarSoft.otf');
+}
+
+body {
+    font-family: 'QuasarSoft', sans-serif;
+}
+
+.page-grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 60px 150px auto;
+}
+
+.sidenav, .topvar, .welcomebar, .content {
+    padding: 20px;
+}
+
+.sidenav {
+    grid-row: span 3;
+    background-color: #84cc16;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .icon-container {
@@ -14,69 +39,50 @@ html{
     padding-left: 10px;
 }
 
-.sidenav {
-    display: flex;
-    flex-direction: column;
-    background-color: #84cc16;
-    width: 40vh;
-    gap: 50px;
+.icon {
+    fill: #ffff;
+    width: 50px;
 }
 
-.searchbar {
+.topvar, .welcomebar {
+    grid-column: 2;
+    background-color: whitesmoke;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-/* Top Bar */
-.topvar {
-    display: flex;
-    justify-content: space-around;
-    background-color: whitesmoke;
-}
-
-/* Style the search box inside the navigation bar */
 input[type=text] {
     border: none;
     font-size: 17px;
     border-radius: 8px;
     padding: 10px;
-    height: 10px;
     width: 50vh;
     background-color: lightgrey;
     color: whitesmoke;
 }
 
-.profile-img-container{
-    display: inline-block; 
-    position: relative; 
-    width: 10vh; 
-    height: 10vh; 
+.profile-img-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
     border-radius: 50%;
 }
 
 .profile-pic {
-    width: auto; 
-    height: 100%; 
+    width: auto;
+    height: 100%;
     margin-left: -10px;
 }
 
-/*Welcome Bar*/
-.welcomebar {
+.user-container, .user-text-container {
     display: flex;
-    background-color: whitesmoke;
-    justify-content: space-around;
-    padding: 16px;
-}
-
-.user-container {
-    display: flex;
+    gap: 10px;
 }
 
 .user-text-container {
-    display: flex;
     flex-direction: column;
-    gap: 0;
 }
 
 #user-text {
@@ -85,7 +91,146 @@ input[type=text] {
 
 .welcome-buttons {
     display: flex;
-    margin: 5px;
+    gap: 8px;
+}
+
+#btn {
+    background-color: blue;
+    border-radius: 24px;
+    color: whitesmoke;
+    border: none;
+    padding: 20px;
+}
+
+.content {
+    grid-column: 2;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.card-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 8px solid #84cc16;
+    width: 80%;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.announcement-card-container, .trending-user-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: 50vh;
+}
+
+.trending-user-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+p {
+    margin: 0;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.page-grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 60px 150px auto;
+}
+
+.content {
+    grid-column: 2;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding-bottom: 20px; /* Padding at the bottom of the content */
+}
+
+.side-cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; /* Add gap between announcement and trending cards */
+}
+
+/* ... (rest of your CSS remains unchanged) ... */
+
+.topvar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
+    background-color: whitesmoke;
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+}
+
+.topvar-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add some space between icons */
+}
+
+.icon-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.icon {
+    /* ... your existing styles ... */
+    vertical-align: middle; /* This can help with minor alignment issues */
+}
+
+.welcomebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures vertical alignment */
+    background-color: whitesmoke;
+    padding: 16px;
+}
+
+.user-container {
+    display: flex;
+    align-items: center; /* Aligns items on the same line */
+}
+
+.user-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 10px; /* Optional: for some space between image and text */
+}
+
+.welcome-buttons {
+    display: flex;
     gap: 8px;
 }
 
@@ -95,60 +240,5 @@ input[type=text] {
     color: whitesmoke;
     border: none;
     text-align: center;
-    padding: 20px;
-}
-
-
-.card-container{
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 8px solid #84cc16;
-    width: 50vh;
-}
-
-.icon{
-
-}
-
-.icons {
-    display: flex;
-    justify-content: right;
-}
-
-.card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* creates two columns */
-    gap: 10px; /* space between cards */
-    padding: 20px; /* space around all cards */
-}
-
-.announcement-card-container{
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 25vh;
-    height: 50vh;
-}
-
-.trending-user-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 25vh;
-    height: 50vh;
-}
-
-.trending-user-text {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-
-}
-
-p {
-    margin: 0;
+    padding: 10px 20px; /* Adjusted padding for better button shape */
 }
