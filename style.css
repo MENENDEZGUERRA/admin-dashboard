@@ -108,11 +108,25 @@ input[type=text] {
 }
 
 .icon{
-    
-}
 
+}
 
 .icons {
     display: flex;
     justify-content: right;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* creates two columns */
+    gap: 10px; /* space between cards */
+    padding: 20px; /* space around all cards */
+}
+
+.announcement-card-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 25vh;
+    height: 50vh;
 }
