@@ -101,4 +101,18 @@ input[type=text] {
 
 .card-container{
     background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 8px solid #84cc16;
+    width: 50vh;
+}
+
+.icon{
+    
+}
+
+
+.icons {
+    display: flex;
+    justify-content: right;
 }
